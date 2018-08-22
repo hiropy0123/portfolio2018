@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
 html,
 body {
 	margin: 0;
-  font-family: arial,helvetica;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+  font-size: 16px;
 }
 
 html {
@@ -19,8 +22,8 @@ header {
 }
 
 header {
-  background-color:rgba(0, 0, 0, 0.3);
-  border-bottom: 1px solid #556270;
+  background-color:rgba(0, 0, 0, 0.5);
+  font-family: 'Oswald', sans-serif;
 }
 
 footer {
@@ -40,7 +43,7 @@ a {
 
 a.active,
 a:hover {
-  color: #C44D58;
+  color: rgb(255, 165, 46);
 }
 
 button {

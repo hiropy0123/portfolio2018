@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { SectionsContainer, Section, Header, Footer } from 'react-fullpage'
+import { SectionsContainer, Section, Header } from 'react-fullpage'
 
 class App extends Component {
   constructor(props) {
@@ -11,7 +11,7 @@ class App extends Component {
   render(){
     const options = {
       sectionClassName: 'section',
-      anchors: ['sectionOne', 'sectionTwo', 'sectionThree'],
+      anchors: ['intro', 'about', 'works'],
       scrollBar: false,
       navigation: true,
       verticalAlign: false,
@@ -26,15 +26,10 @@ class App extends Component {
     return (
       <div id="app">
         <Header>
-          <a href="#sectionOne" className="opa">Section One</a>
-          <a href="#sectionTwo">Section Two</a>
-          <a href="#sectionThree">Section Three</a>
+          <a href="#intro" className="opa">Top</a>
+          <a href="#about">About me</a>
+          <a href="#works">Works</a>
         </Header>
-        <Footer>
-          <a href="">Dcoumentation</a>
-          <a href="">Example Source</a>
-          <a href="">About</a>
-        </Footer>
         <SectionsContainer className="container" {...options} activeSection={current}>
           <Section className="custom-section" verticalAlign="true" color="#69D2E7">Page 1</Section>
           <Section color="#A7DBD8">Page 2</Section>
@@ -42,7 +37,7 @@ class App extends Component {
         </SectionsContainer>
 
         <div className="btnGroup">
-          <button onClick={() => this.setState({current: current - 1})} disabled={current === 0}>pre</button>
+          <button onClick={() => this.setState({current: current - 1})} disabled={current === 0}>prev</button>
           <button onClick={() => this.setState({current: current + 1})} disabled={current === 2}>next</button>
         </div>
       </div>
