@@ -1,0 +1,29 @@
+{
+  "name": "portfolio2018",
+  "version": "1.0.0",
+  "description": "my portfolio",
+  "main": "gulpfile.js",
+  "author": "hiroki nakashima",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "animejs": "^2.2.0",
+    "axios": "^0.18.0",
+    "lodash": "^4.17.10",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-fullpage": "^0.1.18",
+    "react-redux": "^5.0.7",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0",
+    "rellax": "^1.6.2",
+    "scrollreveal": "^3.4.0",
+    "smooth-scroll": "^14.2.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
