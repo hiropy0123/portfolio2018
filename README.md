@@ -1,5 +1,3 @@
-# SANKO RECYCLE スペシャルサイト  
-
 
 ##  サーバー起動  
 `yarn start`  
